@@ -12,7 +12,7 @@ const Navbar = () => {
         }
     }
   return (
-    <div className='bg-white text-black dark:bg-black/80 dark:text-white w-full sticky top-0 left-0 right-0 border-b border-neutral-300 px-5 py-8 backdrop:blur-sm'>
+    <div className='bg-white/80 text-black dark:bg-black/80 dark:text-white w-full sticky top-0 left-0 right-0 border-b dark:border-none border-neutral-300 px-5 py-8 backdrop-blur-sm z-50'>
       <div className='relative'>
       <div className='w-[90%] mx-auto grid grid-cols-[10fr_1fr] md:grid-cols-[1fr_3fr_1fr] items-center justify-between'>
         <div className='text-4xl text-amber-500 font-bold uppercase'>LoGo</div>

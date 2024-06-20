@@ -2,7 +2,9 @@ import image1 from "../assets/slider/web1.png"
 import image2 from "../assets/slider/web2.png"
 import image3 from "../assets/slider/web3.png"
 import image4 from "../assets/slider/web4.png"
-
+import pic1 from "../assets/system/pic1.png"
+import pic2 from "../assets/system/pic2.png"
+import pic3 from "../assets/system/pic3.png"
 
 
 
@@ -63,4 +65,23 @@ export const slider =  [
         btnText: "Share",
         image: image4
     }
+]
+
+
+export const system =[
+    {
+        img: pic1,
+        header: "Membership Organisation",
+        p: "our membership management softwere provides full automation of mambership renewal and payments"
+    },
+    {
+        img: pic2,
+        header: "Club and Groups",
+        p: "our membership management softwere provides full automation of mambership renewal and payments"
+    },
+    {
+        img: pic3,
+        header: "National Associations",
+        p: "our membership management softwere provides full automation of mambership renewal and payments"
+    },
 ]

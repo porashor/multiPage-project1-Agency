@@ -1,18 +1,30 @@
 import React from 'react'
 import HCard from './HCard'
 import { slider } from '../data/Data'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Container from './Container';
 
 const Hero = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
+    
   return (
-    <div className='bg-white dark:bg-slate-700 text-black dark:text-white'>
-      <div className='w-[85%] h-fit mx-auto py-8 px-10'>
+    <Container>
+      <Slider {...settings}>
         {
             slider.map((item, index)=>(
                 <HCard key={index} h1={item.header} h2={item.colorheader} p={item.para} href={``} image={item.image} btn={item.btnText}/>
             ))
         }
-      </div>
-    </div>
+        </Slider>
+    </Container>
   )
 }
 
